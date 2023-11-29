@@ -1,5 +1,0 @@
-1. Navbar item belum ada target tujuan (href)
-2. Jarak navbar item di 768, 1200 belum pas
-3. Footer item belum ada target tujuan (href)
-4. Di bagian footer gw ngehapus coloumn Explore Us
-
