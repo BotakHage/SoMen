@@ -1,5 +1,6 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
+import '../styles/responsive.css';
 import './component/nav-bar';
 import './component/foot-bar';
 import './component/article-bar';
