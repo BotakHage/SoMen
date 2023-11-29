@@ -15,3 +15,9 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
   app.renderPage();
 });
+
+ function scrollToSection2() {
+      $('html, body').animate({
+        scrollTop: $('#section2').offset().top
+      }, 'slow');
+    }
