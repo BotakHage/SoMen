@@ -20,13 +20,13 @@ class NavBar extends HTMLElement {
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tes Psikologi</a>
+            <a class="nav-link" href="#/test">Tes Psikologi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Konsultasi</a>
+            <a class="nav-link" href="#/consul">Konsultasi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami</a>
+            <a class="nav-link" href="#/about">Tentang Kami</a>
           </li>
         </ul>
       </div>
