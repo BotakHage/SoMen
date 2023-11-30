@@ -16,8 +16,14 @@ window.addEventListener('load', () => {
   app.renderPage();
 });
 
- function scrollToSection2() {
-      $('html, body').animate({
-        scrollTop: $('#section2').offset().top
-      }, 'slow');
-    }
+// eslint-disable-next-line no-unused-vars
+function scrollToSection2() {
+  // eslint-disable-next-line no-undef
+  $('html, body').animate(
+    {
+      // eslint-disable-next-line no-undef
+      scrollTop: $('#section2').offset().top,
+    },
+    'slow',
+  );
+}
