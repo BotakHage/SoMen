@@ -5,56 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOMEN</title>
     <script>
-    function scrollToSection2() {
-      $('html, body').animate({
-        scrollTop: $('#section2').offset().top
-      }, 'slow');
-    }
-
-    function findLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            
-            const mapsUrl = `https://www.google.com/maps/search/psikolog+terdekat/@${latitude},${longitude}`;
-            
-            window.open(mapsUrl, '_blank');
-        }, function(error) {
-          Swal.fire({
-              title: "upss!",
-              text: "Gagal mendapatkan lokasi. Pastikan GPS Anda aktif!",
-              icon: "error"
-            });;
-            
-        });
-      } else {
-          alert('Browser Anda tidak mendukung geolokasi.');
+      function scrollToSection2() {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section2').offset().top,
+          },
+          'slow'
+        );
       }
-    }
-  </script>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"
-    type="text/css" />
+      function findLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            function (position) {
+              const latitude = position.coords.latitude;
+              const longitude = position.coords.longitude;
 
-  <!-- Bootstrap JS and dependencies -->
+              const mapsUrl = `https://www.google.com/maps/search/psikolog+terdekat/@${latitude},${longitude}`;
+
+              window.open(mapsUrl, '_blank');
+            },
+            function (error) {
+              Swal.fire({
+                title: 'upss!',
+                text: 'Gagal mendapatkan lokasi. Pastikan GPS Anda aktif!',
+                icon: 'error',
+              });
+            }
+          );
+        } else {
+          alert('Browser Anda tidak mendukung geolokasi.');
+        }
+      }
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <header>
       <nav-bar></nav-bar>
     </header>
 
-    <main id="mainContent">
-    </main>
+    <main id="mainContent"></main>
 
+
+     
+    <!-- Artikel Section
+    <section class="article-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="hero-writer">Artikel</h2>
+            <br />
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Card 1 
+          <div class="col-md-3">
+            <a href="artikel1.html" class="card-link">
+              <div class="card w-100 shadow">
+                <img src="images/artikel1.png" class="card-img-top" alt="Gambar Artikel 1" />
+                <div class="card-body">
+                  <p class="card-text">Faktor-faktor yang Memengaruhi Kesehatan Mental Remaja</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 
+          <div class="col-md-3">
+            <a href="artikel2.html" class="card-link">
+              <div class="card w-100 shadow">
+                <img src="images/artikel2.png" class="card-img-top" alt="Gambar Artikel 2" />
+                <div class="card-body">
+                  <p class="card-text">7 Cara Manajemen Stress untuk Kesehatan Mental</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 
+          <div class="col-md-3">
+            <a href="artikel3.html" class="card-link">
+              <div class="card w-100 shadow">
+                <img src="images/artikel3.png" class="card-img-top" alt="Gambar Artikel 3" />
+                <div class="card-body">
+                  <p class="card-text">5 Olahraga yang Ampuh untuk Menghilangkan Stress</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 
+          <div class="col-md-3">
+            <a href="artikel4.html" class="card-link">
+              <div class="card w-100 shadow">
+                <img src="images/artikel4.png" class="card-img-top" alt="Gambar Artikel 4" />
+                <div class="card-body">
+                  <p class="card-text">Alasan Utama Gen Z Rentan Kena Masalah Mental</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section> -->
+
+    <hr id="line">
     <footer>
       <foot-bar></foot-bar>
     </footer>

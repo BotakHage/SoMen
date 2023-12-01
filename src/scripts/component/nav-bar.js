@@ -6,6 +6,7 @@ class NavBar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
+<<<<<<< HEAD
 
 
 <!-- Navbar -->
@@ -46,7 +47,6 @@ class NavBar extends HTMLElement {
       </ul>
     </div>
 </nav>
-
 
     `;
   }
