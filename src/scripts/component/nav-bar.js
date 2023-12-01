@@ -27,12 +27,26 @@ class NavBar extends HTMLElement {
         <li class="nav-item">
           <a class="nav-link" href="#/consul">Konsultasi</a>
         </li>
+        <!-- Dropdown Mini Games -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mini Games
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.sonsaur.com/summer-lake-1-5/">Game memancing</a>
+            <a class="dropdown-item" href="https://id.akinator.com/game">Game meramal</a>
+            <a class="dropdown-item" href="https://www.crazygames.com/game/man-runner-2048">Game lari</a>
+          </div>
+        </li>
+        <!-- End Dropdown Mini Games -->
         <li class="nav-item">
           <a class="nav-link" href="#/about">Tentang Kami</a>
         </li>
+        
       </ul>
     </div>
 </nav>
+
 
     `;
   }
