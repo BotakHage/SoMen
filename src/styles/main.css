@@ -6,12 +6,17 @@ main {
   margin: 5em 0 2em;
 }
 
-body {
+img#logosomen {
+    height: 50px;
+}
+
+.bg {
   background-image: url(../public/images/vector.png);
   background-size: 150%;
   background-repeat: no-repeat;
-  background-color: #f9fbfc;
+  background-color: #f9fbfc
 }
+
 
 a {
   cursor: pointer;

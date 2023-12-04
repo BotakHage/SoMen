@@ -11,8 +11,8 @@ class NavBar extends HTMLElement {
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="index.html">
-      <img src="icons/logo.png" alt="">
+    <a class="navbar-brand" href="#">
+      <img src="icons/logo.png" id="logosomen" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@ class NavBar extends HTMLElement {
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#/test">Tes Psikologi</a>
+          <a class="nav-link" href="#/mulai">Tes Psikologi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#/consul">Konsultasi</a>

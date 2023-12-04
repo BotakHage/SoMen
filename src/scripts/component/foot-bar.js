@@ -19,9 +19,9 @@ class FootBar extends HTMLElement {
         <div class="col-md-3 px-0" id="coloumn2">
           <h5>Features</h5>
           <ul class="list-unstyled">
-            <li><a href="mulai.html">Tes Psikologi</a></li>
+            <li><a href="#/mulai">Tes Psikologi</a></li>
             <li><a href="">Konsultasi gratis</a></li>
-            <li><a href="">Temukan Bantuan</a></li>
+            <li><a id="lokasi">Temukan Bantuan</a></li>
           </ul>
         </div>
 
