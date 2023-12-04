@@ -37,7 +37,7 @@ export const findLocation = () => {
 const Tinggi = {
   async render() {
     return `
-<br><br><br><br><br>
+
 <div class="container">
     <div class="card text-center" id="bodyquiz">
         <div class="card-body">

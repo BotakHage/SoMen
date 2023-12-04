@@ -34,9 +34,9 @@ class NavBar extends HTMLElement {
             Mini Games
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://www.sonsaur.com/summer-lake-1-5/">Game memancing</a>
-            <a class="dropdown-item" href="https://id.akinator.com/game">Game meramal</a>
-            <a class="dropdown-item" href="https://www.crazygames.com/game/man-runner-2048">Game lari</a>
+    <a class="dropdown-item" href="https://www.sonsaur.com/summer-lake-1-5/" target="_blank">Game memancing</a>
+    <a class="dropdown-item" href="https://id.akinator.com/game" target="_blank">Game meramal</a>
+    <a class="dropdown-item" href="https://www.crazygames.com/game/man-runner-2048" target="_blank">Game lari</a>
           </div>
         </li>
         <!-- End Dropdown Mini Games -->
