@@ -1,7 +1,6 @@
 const Test = {
   async render() {
     return `
-      <h1>HELLO TEST</h1>
       `;
   },
 
