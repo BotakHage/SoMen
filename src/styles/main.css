@@ -10,7 +10,7 @@ body {
   background-image: url(../public/images/vector.png);
   background-size: 150%;
   background-repeat: no-repeat;
-  background-color: #f9fbfc;
+  background-color: #f8f9fa ;
 }
 
 a {
@@ -122,12 +122,6 @@ footer {
 }
 
 /* ! Article Style */
-.article-section a {
-  text-decoration: none;
-  color: #211b3d;
-  text-align: center;
-}
-
 article {
   padding: 1.5em 2em;
   line-height: 1.6;
@@ -178,4 +172,31 @@ article {
 .article-source ul {
   padding-left: 1em;
   margin: 0;
+}
+
+/* ! Carousel Style */
+.article-section {
+  margin-bottom: 5em ;
+}
+
+.article-section a {
+  text-decoration: none;
+  color: #211b3d;
+  text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 4em;
+  top: 7em;
+  border-radius: 4em;
+  background-color: #4bb1fb;
+}
+
+.card {
+  margin: 0 2em;
+}
+
+.card-text {
+  font-size: 1.2em;
 }

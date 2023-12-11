@@ -8,39 +8,46 @@ class ArticleBar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-        <section class="article-section">
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <h1 id="hero-title">Artikel</h1>
-              </div>
-            </div>
-
-            <div class="row" id="article-list">
-              <!-- list artikel -->
+      <section class="article-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1 id="hero-title">Artikel</h1>
             </div>
           </div>
-        
-        </section>
-    `;
 
-    const listArticle = this.querySelector('#article-list');
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
 
-    articlesData.forEach((article) => {
-      listArticle.innerHTML += `
-        <div class="col-md-4 col-lg-2 m-3" id="article-${article.id}">
-        <a href="#/article/${article.id}" class="card-link">
-            <div class="card w-100 shadow">
-              <img src=${article.image} class="card-img-top" alt=${article.title}>
-              <div class="card-body">
-                <p class="card-text" id="hero-desc">${article.title}</p>
-              </div>
+            <div class="carousel-inner">
+              ${articlesData.map((article, index) => `
+                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                  <div class="cards-wrapper">
+                    <div class="card">
+                      <img src="${article.image}" class="card-img-top" alt="${article.title}" />
+                      <div class="card-body">
+                        <a href="#/article/${article.id}" class="card-link">
+                          <p class="card-text">${article.title}</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
             </div>
-          </a>  
+            
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
         </div>
-      `;
-    });
+      </section>
+    `;
   }
 }
 
